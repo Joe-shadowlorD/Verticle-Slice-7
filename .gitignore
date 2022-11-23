@@ -69,6 +69,7 @@ crashlytics-build.properties
 
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
+<<<<<<< HEAD
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 # Windows thumbnail cache files
@@ -95,3 +96,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+=======
+/[Aa]ssets/[Ss]treamingAssets/aa/*
+>>>>>>> 4d68b1a7deb5aebfd3e484c06d48f3936aaf66ca
