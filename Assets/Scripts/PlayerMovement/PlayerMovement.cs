@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private float movement = 2f;
     private float JumpForce = 7f;
-    private float SecondJumpForce = 5f;
+    private float SecondJumpForce = 6f;
     private float speed = 6f;
 
     private bool candoublejump = false;
@@ -34,23 +34,22 @@ public class PlayerMovement : MonoBehaviour
         {
             speed /= 1.5f;
         }
-
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (groundCheck.grounded)
         {
-            if (groundCheck.grounded)
+            candoublejump = true;
+            if (Input.GetKeyDown(KeyCode.Z))
             {
-                rb.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
-                candoublejump = true;
+                    rb.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
             }
-            else
+        }
+        else if(candoublejump)
+        {
+            if (Input.GetKeyDown(KeyCode.Z))
             {
-                if (candoublejump)
-                {
-                    rb.AddForce(new Vector2(0, SecondJumpForce), ForceMode2D.Impulse);
-                    candoublejump = false;
-                }
+                rb.AddForce(new Vector2(0, SecondJumpForce), ForceMode2D.Impulse);
+                candoublejump = false;
             }
-            
+
         }
     }
 
