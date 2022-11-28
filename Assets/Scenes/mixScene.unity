@@ -1074,6 +1074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundCheck: {fileID: 1457940895}
+  attack: {fileID: 1165851700}
 --- !u!50 &1165851696
 Rigidbody2D:
   serializedVersion: 4
@@ -1194,7 +1195,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attack: {fileID: 760994130}
   reloadtime: 2
-  attackDuration: 1
+  attackDuration: 0.5
+  isattacking: 0
 --- !u!1 &1221392080
 GameObject:
   m_ObjectHideFlags: 0

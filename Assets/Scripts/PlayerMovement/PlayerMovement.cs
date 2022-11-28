@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rb;
     public GroundCheck groundCheck;
+    public Attack attack;
 
     private void Start()
     {
@@ -50,6 +51,14 @@ public class PlayerMovement : MonoBehaviour
                 candoublejump = false;
             }
 
+        }
+        if (attack.isattacking)
+        {
+            gameObject.GetComponent<Rigidbody2D>().gravityScale = 0;
+        }
+        else
+        {
+            gameObject.GetComponent<Rigidbody2D>().gravityScale = 1;
         }
     }
 
