@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a6fd8573b75d64a458da9025197c1291
+guid: ec2ee4f2cfd56ee42b90d0e07dda13f5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: coin animation sheet 001 -k_0
+      name: head cracks death 002 -k_0
       rect:
         serializedVersion: 2
-        x: 126
-        y: 407
-        width: 335
-        height: 299
+        x: 0
+        y: 434
+        width: 294
+        height: 345
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e922dd922bbc984458fcaf16015665c5
-      internalID: 1543366845
+      spriteID: e762965d3a16fae43ac96634e60a2d89
+      internalID: -1984770604
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: coin animation sheet 001 -k_1
+      name: head cracks death 002 -k_1
       rect:
         serializedVersion: 2
-        x: 753
-        y: 394
-        width: 362
-        height: 324
+        x: 0
+        y: 89
+        width: 294
+        height: 345
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +140,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 458476c44a78ffa4a80f1e2992467b02
-      internalID: 2068105931
+      spriteID: 4270510de084c6647baeb29610473840
+      internalID: 1304609248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head cracks death 002 -k_2
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 89
+        width: 294
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c2053f0339b494fbcfef50cdd8bd14
+      internalID: -360581822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head cracks death 002 -k_3
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 89
+        width: 294
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63a58d0c96c621840b361b74522128be
+      internalID: -283110726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head cracks death 002 -k_4
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 89
+        width: 294
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 586a232f8735b434dae771198fd3eaee
+      internalID: -1816737072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head cracks death 002 -k_5
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 89
+        width: 294
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f9871a27cdff04d87aa0e0265c319b
+      internalID: 1370015876
       vertices: []
       indices: 
       edges: []
@@ -157,8 +241,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      coin animation sheet 001 -k_1: 2068105931
-      coin animation sheet 001 -k_0: 1543366845
+      head cracks death 002 -k_4: -1816737072
+      head cracks death 002 -k_1: 1304609248
+      head cracks death 002 -k_5: 1370015876
+      head cracks death 002 -k_0: -1984770604
+      head cracks death 002 -k_3: -283110726
+      head cracks death 002 -k_2: -360581822
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
