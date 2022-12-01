@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class AmountOfCoins : MonoBehaviour
 {
-    public float amountOfCoinsOwned = 0f;
     public Text coinsText;
+    public float amountOfCoinsOwned = 0f;
 
     // Start is called before the first frame update
     void Start()
