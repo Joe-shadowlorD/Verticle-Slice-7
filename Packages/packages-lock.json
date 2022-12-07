@@ -1,7 +1,11 @@
 {
   "dependencies": {
     "com.unity.2d.animation": {
+<<<<<<< Updated upstream
       "version": "7.0.5",
+=======
+      "version": "7.0.6",
+>>>>>>> Stashed changes
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -39,11 +43,19 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.2d.psdimporter": {
+<<<<<<< Updated upstream
       "version": "6.0.3",
       "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.unity.2d.animation": "7.0.4",
+=======
+      "version": "6.0.4",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.2d.animation": "7.0.6",
+>>>>>>> Stashed changes
         "com.unity.2d.common": "6.0.3",
         "com.unity.2d.sprite": "1.0.0"
       },
@@ -56,7 +68,11 @@
       "dependencies": {}
     },
     "com.unity.2d.spriteshape": {
+<<<<<<< Updated upstream
       "version": "7.0.4",
+=======
+      "version": "7.0.5",
+>>>>>>> Stashed changes
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -133,11 +149,19 @@
       "depth": 0,
       "source": "builtin",
       "dependencies": {
+<<<<<<< Updated upstream
         "com.unity.2d.animation": "7.0.5",
         "com.unity.2d.pixel-perfect": "5.0.1",
         "com.unity.2d.psdimporter": "6.0.3",
         "com.unity.2d.sprite": "1.0.0",
         "com.unity.2d.spriteshape": "7.0.4",
+=======
+        "com.unity.2d.animation": "7.0.6",
+        "com.unity.2d.pixel-perfect": "5.0.1",
+        "com.unity.2d.psdimporter": "6.0.4",
+        "com.unity.2d.sprite": "1.0.0",
+        "com.unity.2d.spriteshape": "7.0.5",
+>>>>>>> Stashed changes
         "com.unity.2d.tilemap": "1.0.0",
         "com.unity.2d.tilemap.extras": "2.2.2"
       }
@@ -197,7 +221,11 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.services.analytics": {
+<<<<<<< Updated upstream
       "version": "4.0.1",
+=======
+      "version": "4.1.0",
+>>>>>>> Stashed changes
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -207,7 +235,11 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.services.core": {
+<<<<<<< Updated upstream
       "version": "1.4.0",
+=======
+      "version": "1.4.2",
+>>>>>>> Stashed changes
       "depth": 1,
       "source": "registry",
       "dependencies": {
