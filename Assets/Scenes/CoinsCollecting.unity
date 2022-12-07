@@ -2985,10 +2985,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coins
       objectReference: {fileID: 0}
-    - target: {fileID: 4264687006877651468, guid: c7b3b91314b4d4e40807a8a8a5c4a043, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 4264687006877651470, guid: c7b3b91314b4d4e40807a8a8a5c4a043, type: 3}
       propertyPath: m_RootOrder
       value: 0
