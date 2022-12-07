@@ -489,6 +489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundCheck: {fileID: 994075343}
+  attack: {fileID: 0}
 --- !u!50 &448362784
 Rigidbody2D:
   serializedVersion: 4

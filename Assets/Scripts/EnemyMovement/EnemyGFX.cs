@@ -41,7 +41,6 @@ public class EnemyGFX : MonoBehaviour
                 {
                     Attack();
                     timer = 0f;
-                    weapon.SetActive(false);
                 }
                 timer += Time.deltaTime;
             }
@@ -53,16 +52,7 @@ public class EnemyGFX : MonoBehaviour
     }
 
     private void Attack()
-    {
-        if (timer <= waitForNextAttack)
-        {
-            if (timer >= 1.8f)
-            {
-                
-                timer = 0f;
-            }
-            timer += Time.deltaTime;
-        }
+    { 
         weapon.SetActive(true);
         weapon.transform.position = gameObject.transform.position + new Vector3(facing, 0f, 0f);
         health.TakeDamage(damage);
