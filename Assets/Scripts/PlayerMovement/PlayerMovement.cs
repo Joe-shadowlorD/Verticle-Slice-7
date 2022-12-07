@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
     public GroundCheck groundCheck;
     public Attack attack;
 
+    public Animator anim;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -38,19 +40,25 @@ public class PlayerMovement : MonoBehaviour
         if (groundCheck.grounded)
         {
             candoublejump = true;
+            anim.SetBool("Jump", false);
             if (Input.GetKeyDown(KeyCode.Z))
             {
-                    rb.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
+                rb.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
+                anim.SetBool("Jump", true);
             }
         }
-        else if(candoublejump)
+        else if (candoublejump)
         {
             if (Input.GetKeyDown(KeyCode.Z))
             {
                 rb.AddForce(new Vector2(0, SecondJumpForce), ForceMode2D.Impulse);
+                anim.SetBool("Jump", true);
                 candoublejump = false;
             }
-
+        }
+        else
+        {
+            anim.SetBool("Jump", false);
         }
         if (attack.isattacking)
         {
