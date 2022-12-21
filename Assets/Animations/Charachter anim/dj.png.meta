@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4fded6275e2ec344f97f74761e83cdc2
+guid: 99e2bb2f630d63244bed5194709407b2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,148 +104,148 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sheet anim d j_4
+      name: dj_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 778
-        width: 471
-        height: 300
+        x: 223
+        y: 580
+        width: 318
+        height: 460
       alignment: 9
-      pivot: {x: 0.46982896, y: 0.47894734}
+      pivot: {x: 0.38820577, y: 0.18378322}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a18032f888ed9ff4abd8b72298b16c25
-      internalID: -433349119
+      spriteID: 19f159773b193164c93719b8f8c1ee4b
+      internalID: -1091934707
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheet anim d j_5
+      name: dj_5
       rect:
         serializedVersion: 2
-        x: 523
-        y: 649
+        x: 559
+        y: 630
         width: 507
         height: 416
       alignment: 9
-      pivot: {x: 0.51245695, y: 0.22672066}
+      pivot: {x: 0.4937714, y: 0.20774299}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be86937223a7f474395155cc7c635e17
-      internalID: 634538085
+      spriteID: 9aaeb6ac52994fc47863a094c9977319
+      internalID: -572422761
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheet anim d j_6
+      name: dj_4
       rect:
         serializedVersion: 2
-        x: 1044
-        y: 566
-        width: 359
-        height: 499
+        x: 1093
+        y: 743
+        width: 548
+        height: 328
       alignment: 9
-      pivot: {x: 0.5527779, y: 0.2785044}
+      pivot: {x: 0.4971184, y: 0.4807445}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38f4fe2a7a83bcb45ae969e8d233a044
-      internalID: -996411316
+      spriteID: ef9c073261500ee4595b3568ace84a5f
+      internalID: 1730347819
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheet anim d j_2
+      name: dj_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 39
-        width: 505
-        height: 330
-      alignment: 9
-      pivot: {x: 0.42808747, y: 0.63397145}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a58f0370f772114e873735034370219
-      internalID: -564526476
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sheet anim d j_0
-      rect:
-        serializedVersion: 2
-        x: 1412
-        y: 75
+        x: 112
+        y: 44
         width: 261
-        height: 501
+        height: 495
       alignment: 9
-      pivot: {x: 0.36085808, y: 0.12496077}
+      pivot: {x: 0.6512401, y: 0.14521633}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b5eaa418939ec241a6967b3adf3d70d
-      internalID: 1285388053
+      spriteID: 7158c7777b10121458fc682975c6cac5
+      internalID: -1026327550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheet anim d j_1
+      name: dj_1
       rect:
         serializedVersion: 2
-        x: 562
-        y: 116
+        x: 589
+        y: 84
         width: 437
         height: 390
       alignment: 9
-      pivot: {x: 0.4096712, y: 0.28947383}
+      pivot: {x: 0.59394175, y: 0.2530365}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e106a65947777047a5269b83893670e
-      internalID: -1845670006
+      spriteID: c93402b88281dde46a1a02e8b07c56e0
+      internalID: 66957857
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheet anim d j_3
+      name: dj_2
       rect:
         serializedVersion: 2
-        x: 28
-        y: 425
-        width: 441
-        height: 297
+        x: 1080
+        y: 0
+        width: 520
+        height: 343
       alignment: 9
-      pivot: {x: 0.44629422, y: 0.6010101}
+      pivot: {x: 0.55769205, y: 0.6288937}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffd112c13c4ea904686957a704223400
-      internalID: -1635072322
+      spriteID: b940dc0a58c55c04cbbc2e9794121989
+      internalID: 941726623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dj_3
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 361
+        width: 482
+        height: 362
+      alignment: 9
+      pivot: {x: 0.5360338, y: 0.5785113}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac1e33f3d4aa0924f98ef6eae3157590
+      internalID: -416111342
       vertices: []
       indices: 
       edges: []
@@ -261,13 +261,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      sheet anim d j_3: -1635072322
-      sheet anim d j_5: 634538085
-      sheet anim d j_0: 1285388053
-      sheet anim d j_2: -564526476
-      sheet anim d j_4: -433349119
-      sheet anim d j_6: -996411316
-      sheet anim d j_1: -1845670006
+      dj_4: 1730347819
+      dj_1: 66957857
+      dj_0: -1026327550
+      dj_5: -572422761
+      dj_2: 941726623
+      dj_6: -1091934707
+      dj_3: -416111342
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
