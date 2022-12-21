@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private float movement = 2f;
-    private float JumpForce = 7f;
-    private float SecondJumpForce = 6f;
-    private float speed = 6f;
+    private float movement = 8f;
+    private float JumpForce = 20f;
+    private float SecondJumpForce = 30f;
+    private float sprint = 16f;
+    //public float fallingGravityScale = 20;
 
     private bool candoublejump = false;
 
@@ -27,15 +28,15 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         movement = Input.GetAxisRaw("Horizontal");
-        transform.Translate(new Vector3(movement * speed, 0, 0) * Time.deltaTime);
+        transform.Translate(new Vector3(movement * sprint, 0, 0) * Time.deltaTime);
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && groundCheck.grounded)
         {
-            speed *= 1.5f;
+            sprint *= 1.5f;
         }
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            speed /= 1.5f;
+            sprint /= 1.5f;
         }
         if (groundCheck.grounded)
         {
@@ -47,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
                 anim.SetBool("Jump", true);
             }
         }
-        else if (candoublejump)
+        if (candoublejump)
         {
             if (Input.GetKeyDown(KeyCode.Z))
             {
@@ -60,6 +61,7 @@ public class PlayerMovement : MonoBehaviour
         {
             anim.SetBool("Jump", false);
         }
+        
         if (attack.isattacking)
         {
             gameObject.GetComponent<Rigidbody2D>().gravityScale = 0;
