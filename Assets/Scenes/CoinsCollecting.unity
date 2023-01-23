@@ -818,6 +818,7 @@ GameObject:
   - component: {fileID: 872934303}
   - component: {fileID: 872934302}
   - component: {fileID: 872934301}
+  - component: {fileID: 872934305}
   - component: {fileID: 872934300}
   - component: {fileID: 872934299}
   m_Layer: 0
@@ -855,8 +856,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c7177c4268d554b94159267cbf7b5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundCheck: {fileID: 1237482988}
-  attack: {fileID: 872934299}
 --- !u!50 &872934301
 Rigidbody2D:
   serializedVersion: 4
@@ -963,6 +962,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &872934305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872934298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54d16a8ff1e646444b749da9d2fa5ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 8
 --- !u!1 &900587289
 GameObject:
   m_ObjectHideFlags: 0
@@ -1900,7 +1912,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 990ce25685d17374092ec89d3fdc9f45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grounded: 1
 --- !u!61 &1237482989
 BoxCollider2D:
   m_ObjectHideFlags: 0

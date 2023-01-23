@@ -16,6 +16,6 @@ public class AmountOfCoins : MonoBehaviour
 
     private void Update()
     {
-        coinsText.text = "amount of coins: " + amountOfCoinsOwned;
+        coinsText.text = ""+amountOfCoinsOwned;
     }
 }
