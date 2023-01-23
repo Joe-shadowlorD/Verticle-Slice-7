@@ -9,6 +9,9 @@ public class Movement : MonoBehaviour
 
     private Rigidbody2D body;
     private SpriteRenderer spi;
+    public Animator animator;
+    public bool xflip;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,14 +24,15 @@ public class Movement : MonoBehaviour
     {
         moveInput = Input.GetAxisRaw("Horizontal");
         body.velocity = new Vector2(moveInput * moveSpeed, body.velocity.y);
-
-        if(body.velocity.x < 0)
+        if (body.velocity.x != 0)
         {
-            spi.flipX = true;
+            xflip = body.velocity.x < 0;
+            animator.SetBool("Walking", true);
         }
-        if (body.velocity.x > 0)
+        else
         {
-            spi.flipX = false;
+            animator.SetBool("Walking", false);
         }
+        spi.flipX = xflip;
     }
 }
