@@ -14,7 +14,6 @@ public class Jump : MonoBehaviour
     private Controller controller;
     private Rigidbody2D body;
     private Ground ground;
-    public Animator animator;
     private Vector2 velocity;
 
     private int jumpPhase;
@@ -41,14 +40,14 @@ public class Jump : MonoBehaviour
 
     private void FixedUpdate()
     {
-        animator.SetInteger("Jumping", jumpPhase);
         onGround = ground.OnGround;
-        animator.SetBool("InAir", !onGround);
         velocity = body.velocity;
+
         if (onGround)
         {
             jumpPhase = 0;
         }
+
         if (desiredJump)
         {
             desiredJump = false;

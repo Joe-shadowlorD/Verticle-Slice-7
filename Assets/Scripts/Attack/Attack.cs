@@ -10,13 +10,10 @@ public class Attack : MonoBehaviour
     private float timer;
     public float attackDuration;
     public bool isattacking;
-    public float distance;
-    private Movement movement;
 
     void Start()
     {
         attack.SetActive(false);
-        movement = GetComponent<Movement>();
     }
 
     void Update()
@@ -27,20 +24,11 @@ public class Attack : MonoBehaviour
             timer = 0;
             if(Input.GetAxisRaw("Horizontal")!=0 || Input.GetAxisRaw("Vertical") != 0)
             {
-                attack.transform.localPosition = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), 0).normalized* distance;
+                attack.transform.localPosition = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), 0).normalized;
             }
             else
             {
-                if (movement.xflip)
-                {
-                    print("stil");
-                    attack.transform.localPosition = new Vector3(-distance, 0, 0);
-                }
-                if (!movement.xflip)
-                {
-                    print("stil!");
-                    attack.transform.localPosition = new Vector3(distance, 0, 0); 
-                }
+                attack.transform.localPosition = new Vector3(1, 0, 0);
             }
             Vector3 dir = attack.transform.position - transform.position;
             float angle = Mathf.Atan2(dir.x, -dir.y) * Mathf.Rad2Deg;
