@@ -9,11 +9,14 @@ public class Movement : MonoBehaviour
 
     private Rigidbody2D body;
     private SpriteRenderer spi;
+    private Animator anim;
+    public bool xflip;
     // Start is called before the first frame update
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
         spi = GetComponentInChildren<SpriteRenderer>();
+        anim = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -22,13 +25,11 @@ public class Movement : MonoBehaviour
         moveInput = Input.GetAxisRaw("Horizontal");
         body.velocity = new Vector2(moveInput * moveSpeed, body.velocity.y);
 
-        if(body.velocity.x < 0)
+        if(body.velocity.x != 0)
         {
-            spi.flipX = true;
+            xflip = body.velocity.x < 0;
         }
-        if (body.velocity.x > 0)
-        {
-            spi.flipX = false;
-        }
+        anim.SetBool("Walking", body.velocity.x != 0);
+        spi.flipX = xflip;
     }
 }

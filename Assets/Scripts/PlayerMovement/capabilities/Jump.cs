@@ -14,6 +14,9 @@ public class Jump : MonoBehaviour
     private Controller controller;
     private Rigidbody2D body;
     private Ground ground;
+    private Animator anim;
+    private Attack attack;
+
     private Vector2 velocity;
 
     private int jumpPhase;
@@ -28,6 +31,8 @@ public class Jump : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         ground = GetComponent<Ground>();
         controller = GetComponent<Controller>();
+        anim = GetComponentInChildren<Animator>();
+        attack = GetComponent<Attack>();
 
         defaultGravityScale = 1f;
     }
@@ -41,6 +46,7 @@ public class Jump : MonoBehaviour
     private void FixedUpdate()
     {
         onGround = ground.OnGround;
+        anim.SetBool("InAir", !onGround);
         velocity = body.velocity;
 
         if (onGround)
@@ -67,7 +73,15 @@ public class Jump : MonoBehaviour
             body.gravityScale = defaultGravityScale;
         }
 
-        body.velocity = velocity;
+        if (!attack.isattacking)
+        {
+            body.velocity = velocity;
+        }
+        else
+        {
+            body.velocity = new Vector2(body.velocity.x/2, 0);
+        }
+        anim.SetInteger("Jump", jumpPhase);
     }
     private void JumpAction()
     {
